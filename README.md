@@ -1,7 +1,7 @@
-# Adapting rmm-diis.cu in VASP to CUDA version over 10
+# Adapting rmm-diis.cu in VASP to CUDA >= 10
 
 ## Problem
-When compile ```vasp_gpu``` with CUDA 10 or later versions, there will be errors:
+When compile ```vasp_gpu``` with CUDA >= 10, there will be errors:
 ```bash
 rmm-diis.cu(45): error: texture is not a template
   texture<uint2> texX;
