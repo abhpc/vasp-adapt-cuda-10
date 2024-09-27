@@ -30,3 +30,9 @@ Replace src/CUDA/rmm-diis.cu with file [rmm-diis.cu](rmm-diis.cu):
 wget https://raw.githubusercontent.com/abhpc/vasp-adapt-cuda-10/refs/heads/main/rmm-diis.cu
 \cp -Rf rmm-diss.cu src/CUDA/rmm-diss.cu
 ```
+
+## NVIDIA arch settings
+The NVIDIA arch settings in ```makefile.include``` should be revised for the latest cards. For example:
+```bash
+GENCODE_ARCH    := -gencode=arch=compute_60,code=\"sm_86,compute_60\"
+```
